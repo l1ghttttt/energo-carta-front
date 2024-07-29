@@ -1,7 +1,6 @@
 import React from 'react';
 import { YMaps, Map, Placemark, Clusterer } from 'react-yandex-maps';
 import useStore from "../Store";
-import {green} from "@mui/material/colors";
 
 const jsonka:any = [
         {
@@ -2475,7 +2474,7 @@ const YMap = () => {
                 }}
                 width="100vw"
                 height="100vh">
-                <Clusterer key={Clusterer.id}>
+                <Clusterer>
                 <Placemark defaultGeometry={[55.751574, 37.573856]} />
                 {jsonka.map((baloon:any) => (
                     <Placemark
